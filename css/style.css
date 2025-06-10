@@ -1,0 +1,415 @@
+/* Área Global do Projeto */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+h2{
+    width: 100%;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 3rem;
+    padding-top: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: white
+}
+
+
+.background-img-default{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-auto-height{
+    min-height: 100px;
+    height: auto;
+    overflow: hidden;
+}
+
+.content-default{
+    width: 90vw;
+    margin: auto;
+}
+
+header{
+    width: 100vw;
+    height: 80vh;
+    background-color: aqua;
+    background-image: url(../images/header.png);
+}
+
+header nav{
+    width: 100vw;
+    height: 12vh;
+    background-color: rgba(1, 56, 106, 80%);
+}
+
+header nav ul{
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li{
+    width: 200px;
+    height: 60px;
+    margin-right: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 5px;
+}
+
+header nav ul li:hover{
+    background-color: rgb(15, 13, 54);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Conteúdo */
+main {
+    width: 100vw;
+    min-height: 1000px;
+    background-color: #11386a;
+
+}
+
+/* Seções de conteúdo do main */
+#biblioteca{
+    width: 100vw;
+    height: auto;
+    background-color: #11386a;
+}
+
+#container-biblioteca{
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    padding-top: 30px;
+}
+
+#container-biblioteca div{
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+}
+
+#container-biblioteca div img{
+    width: 100%;
+    height: auto;   
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    vertical-align: middle;
+}
+
+#container-biblioteca div p{
+    width: 100%;
+    min-height: 50px;
+    font-family: verdana;
+    color: white;
+
+    font-size: 1.1em;
+    line-height: 1.9;
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding-left: 0;
+    text-align: justify;
+}
+
+/* 4 imagens pequenas */
+#new-imagens{      
+    width: 100vw;
+    height: 650px;
+}
+
+#container-imagens{
+    width: 100%;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 15px;
+    grid-row-gap: 50px;
+}
+
+#container-imagens div{
+    height: 300px;
+    text-align: center; 
+    line-height: 300px;
+}
+
+#container-imagens div img{
+    width: 90%;
+    height: 180px;
+    border-radius: 70%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#banner1{
+    width: 100vw;
+    height: 650px;
+    background-image: url(../images/banner1.jpg);
+}
+
+
+#livros{
+    width: 100%;
+    min-height: 2000px;
+    background-color: #11386a;
+    color: white;
+}
+
+#container-livros{
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+#container-livros div{
+    height: 850px;
+    background-color: rgb(15, 13, 54);
+    margin-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#container-livros div h3{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 1.1em;
+    line-height: 2;
+    padding-top: 14px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+#container-livros div img{
+    width: 260px;
+    height: 370px;
+    display: block;
+    object-fit: contain;
+}
+
+#container-livros div p{
+    width: 90%;
+    height: auto;
+    max-height: 200px;
+    overflow: auto;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    line-height: 2.3;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    text-align: left;
+    padding: 15px;
+}
+
+#container-livros button{
+    background-color: #11386a;
+    color: white;
+    border: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 35px;
+    padding-top: 20px;
+    font-size: 1em;
+    border-radius: 15px ;
+} 
+
+#unidades{
+    width: 100vw;
+    min-height: 1100px;
+    background-color: #079f41;
+}
+
+#container-unidades{
+    width: 100%;
+    min-height: 1100px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+#container-unidades div{
+    height: 400px;
+}
+
+#container-unidades div img{
+    width: 550px;
+    height: auto;
+}
+
+#container-unidades div h3{
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+#container-unidades p{
+    color: white;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    line-height: 2;
+}
+
+
+#contatos{
+    width: 100vw;
+    min-height: 500px;
+    background-color:#11386a;
+}
+
+#container-contatos{
+    width: 100%;
+    min-height: 400px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+#container-contatos div{
+    height: 350px;
+}
+
+#container-contatos div img{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+
+    border: solid 10px #12207b;
+    box-shadow: 0 0 15px 5px rgb(23, 42, 243);
+}
+
+#container-contatos div p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    font-size: 1.1rem;
+    word-spacing: 5px;
+    line-height: 3;
+}
+
+
+/* Rodapé */
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+}
+
+footer p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+/* MOBILE */
+@media screen and (max-device-width:799px){
+    
+    h2{
+        text-align: center;
+    }
+
+    .content-default{
+        width: 100vw;
+    }
+    
+    header{
+        height: 50vh;
+    }
+
+    .background-img-default{
+        background-color: contain;
+        background-attachment: scroll;
+    }
+
+    header nav{
+        height: 50px;
+        background-color: rgba(1, 56, 106, 90%);
+        background-image: url(../images/menu.png);
+        background-size: 50px 50px;
+        background-repeat: no-repeat;
+    }
+
+    header nav ul{
+        display: none;
+        width: 100vw;
+        height: auto;
+        background-color: rgba(34, 35, 49, 75%);
+        z-index: 999;
+        position: absolute;
+    }
+
+    header nav:hover > #menu{
+        display: block;
+    }
+
+    #biblioteca div{
+        width: 90vw;
+    }
+
+    /* ajuste nas 4 imagens abaixo */
+    #container-imagens div img{
+        width: 50vw;   
+        height: auto; 
+    }
+
+    #livros div{
+        width: 90%;
+    }
+
+    #unidades div{
+        width: 90%;
+    }
+}
